@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -18,16 +19,15 @@ const App = () => {
           <Home />
         </div>
 
+        <div id="about">
+          <About />
+        </div>
         <div id="features">
           <Features />
         </div>
 
         <div id="destination">
           <Destination />
-        </div>
-
-        <div id="about">
-          <About />
         </div>
 
         <div id="contact">
