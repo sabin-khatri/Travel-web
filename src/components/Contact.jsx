@@ -53,8 +53,8 @@ const Contact = () => {
         <div className="w-full lg:w-1/2 flex flex-col items-center text-center">
           <img src={img} alt="Contact" className="rounded-lg shadow-lg w-full max-h-[400px] object-cover" />
           <p className="mt-6 text-sm text-[#898888]">
-            We'd love to hear from you! Whether you have questions, feedback, or need assistance with your travel plans, 
-            please don't hesitate to reach out. Our team is here to help you every step of the way.
+            We hadd love to hear from you! Whether you have questions, feedback, or need assistance with your travel plans, 
+            please do not hesitate to reach out. Our team is here to help you every step of the way.
           </p>
         </div>
       </div>
