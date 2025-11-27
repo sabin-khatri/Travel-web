@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center md:px-32 px-5 py-10">
       <div className="flex flex-col lg:flex-row items-center gap-10 w-full">
-        {/* Contact Form */}
+      
         <form className="w-full lg:w-2/5 space-y-6 bg-[#f2f2f2] p-6 rounded-xl shadow-md">
           <h1 className="text-4xl font-semibold text-center text-darkBackground">Contact Form</h1>
 
@@ -49,7 +49,7 @@ const Contact = () => {
           </div>
         </form>
 
-        {/* Image & Message */}
+      
         <div className="w-full lg:w-1/2 flex flex-col items-center text-center">
           <img src={img} alt="Contact" className="rounded-lg shadow-lg w-full max-h-[400px] object-cover" />
           <p className="mt-6 text-sm text-[#898888]">

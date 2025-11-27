@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-// src/components/Navbar.jsx
 
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-// Reusable NavLink for Desktop Scroll Links
+
 const NavScrollLink = ({ to, label, onClick }) => (
   <ScrollLink
     to={to}
@@ -48,7 +47,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
+  
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
   }, [isMenuOpen]);
@@ -60,14 +59,14 @@ const Navbar = () => {
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
-        {/* Logo */}
+  
         <RouterLink to="/" onClick={closeMenu}>
           <h1 className="text-2xl font-extrabold text-slate-900">
             Travel<span className="text-orange-500">App</span>
           </h1>
         </RouterLink>
 
-        {/* Desktop Navigation */}
+      
         <div className="hidden lg:flex items-center gap-8">
           {isHomePage &&
             navItems.map((item) => (
@@ -75,7 +74,7 @@ const Navbar = () => {
             ))}
         </div>
 
-        {/* Desktop Auth Buttons */}
+      
         <div className="hidden lg:flex items-center gap-4">
           <RouterLink
             to="/register"
@@ -91,7 +90,7 @@ const Navbar = () => {
           </RouterLink>
         </div>
 
-        {/* Mobile Menu Icon */}
+        
         <div className="lg:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {isMenuOpen ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
@@ -99,7 +98,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu (Slide down from top) */}
+
       <div
         className={`lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-lg shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${
           isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
